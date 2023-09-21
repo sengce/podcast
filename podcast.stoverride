@@ -1,0 +1,24 @@
+name: 在线规则覆写
+desc: 添加分组&规则：1.Podcast
+
+proxy-groups:
+  - name: 📻 Podcast
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🚀 手动切换
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - DIRECT
+
+rules:
+ - DOMAIN-KEYWORD,acast.com,📻 Podcast
+ - DOMAIN-KEYWORD,acast,📻 Podcast
+ - DOMAIN-KEYWORD,omny,📻 Podcast
+ - DOMAIN-SUFFIX,acast.com,📻 Podcast
+ - DOMAIN-SUFFIX,omny.fm,📻 Podcast
